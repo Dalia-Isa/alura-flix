@@ -1,0 +1,45 @@
+@import "./normalize.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font:"Montserrat", sans-serif;
+   --blanco: #f0f0f0;
+  --negro: #000000;
+  --azul1: #012A4A;
+  --azul2: #013A63;
+  --azul3: #01497C;
+  --azul4: #014F86;
+  --azul5: #2A6F97;
+  --azul6: #468FAF;
+  --azul7: #89C2D9;
+  --azul8: #A9D6E5;
+  --amarillo: #ffba05;
+  --rojo: #c40404;
+  --verde: #00c86f;  
+}
+
+html {
+  font-size: 100%; /* Base para usar rem (1rem = 16px por defecto) */
+  scroll-behavior: smooth; /* Suaviza el scroll al navegar */
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  
+  background: linear-gradient(rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0.7)),
+        url('/src/assets/img/main02.jpg');
+  background-size: auto;
+  background-position: center;
+  background-repeat: repeat;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 40px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;  
+}

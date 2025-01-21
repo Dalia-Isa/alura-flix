@@ -1,0 +1,38 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background: linear-gradient(rgba(28, 1, 151, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url('/src/assets/img/header01.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 15px;
+    color: var(--marronClaro);
+    border-top: 4px solid var(--azul7);
+    box-shadow: 0px -2px 5px 0px rgba(34, 113, 209, 0.70);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer p {
+    font-family: var(--font);
+    color: var(--blanco);
+    margin-bottom: 10px;
+    margin-left: 20px;    
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+}
+
+.logo:hover {
+    transform: scale(1.05); 
+  }

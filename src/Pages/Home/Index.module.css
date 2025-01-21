@@ -1,0 +1,77 @@
+@import "/src/styles/global.css";
+
+.container {
+    padding: 20px;
+  }
+  
+  .videoGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+    margin-top: 10px;
+  }
+  
+  .categoryTitulo {
+    width:fit-content;
+    padding: 18px 20px;
+    border: none;
+    border-radius: 12px;
+    margin: 20px 0;
+    font-family: var(--font);
+    font-size: 1.2rem;
+  }
+  
+  .editForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .editForm label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .editForm input,
+  .editForm textarea {
+    padding: 8px;
+    border: 1px solid var(--gris);
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .actions {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    margin-top: 20px; 
+  }
+  
+  .actions button {
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 8px; 
+    font-size: 1rem; 
+    cursor: pointer; 
+  }
+  
+  .saveButton:hover,
+  .clearButton:hover {
+    opacity: 0.9; 
+  }
+  
+  .saveButton:active,
+  .clearButton:active {
+    transform: scale(0.95); 
+  }
+  
+  

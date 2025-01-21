@@ -1,0 +1,58 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    background: var(--azul2);
+    color:var(--blanco);
+    border-radius: 12px;
+    padding: 20px;
+    width: 400px; 
+    position: relative;
+        
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .modal img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .modal label {
+    display: block;
+    font-family: var(--font);
+    font-size: 0.9rem;
+    margin-top: 10px;
+    margin-bottom: 4px; 
+  }
+    
+  .x  {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;    
+  }
+  
+ 
+  /*----pruebas----*/
+
+ .modal input,
+.modal textarea {
+  padding: 8px;
+  border: 1px solid var(--gris);
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+

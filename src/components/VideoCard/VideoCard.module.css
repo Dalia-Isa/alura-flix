@@ -1,0 +1,126 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--azul1);
+  border-radius: 12px;
+  margin: 1%;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  
+}
+
+.zoom {
+  transform: scale(1.05);
+}
+
+.thumbnail {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+  object-fit: cover;
+}
+
+.info {
+  margin-top: 2px;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: var(--blanco);
+  margin: 12px;
+  margin-bottom: 2px;
+}
+
+.category {
+  font-size: 1rem;
+  margin: 2px 2px 0 12px;
+}
+
+.actions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*modificacion*/
+button{
+  background:var(--azul5);
+  color:var(--blanco);
+  border:none;
+  border-radius: 16px;
+  position:relative;
+  height:60px;
+  font-size:1rem;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+/*cierre modificacion*/
+
+
+.editButton, .deleteButton {
+  display: flex;
+  align-items: center;
+  border: none;
+  margin: 12px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: auto; 
+}
+
+.editButton {
+  background-color: var(--azul5);
+  color: var(--blanco);  
+}
+
+.deleteButton {
+    background-color: var(--azul5);
+    color: var(--blanco);  
+}
+
+.icon {
+  width: 16px; 
+  height: 16px;
+  margin-right: 6px;
+}  
+
+/* Categorías */
+.HeavyMetal {
+  border: 3px solid var(--verde);
+  box-shadow: 0 4px 6px var(--negro)
+}
+
+.HeavyMetalText {
+  color: var(--verde);
+}
+
+.BlackMetal {
+  border: 3px solid var(--rojo);
+  box-shadow: 0 4px 12px var(--negro)
+}
+
+.BlackMetalText {
+  color: var(--rojo);
+}
+
+.Trash {
+  border: 3px solid var(--azul5);
+  box-shadow: 0 4px 6px var(--negro)
+}
+
+.TrashText {
+  color: var(--azul5);
+}
+
+.MetalProgresivo {
+  border: 3px solid var(--amarillo);
+  box-shadow: 0 4px 6px var(--negro)
+}
+
+.MetalProgresivoText {
+  color: var(--amarillo);
+}

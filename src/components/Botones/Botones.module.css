@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.button{
+  background:var(--azul5);
+  color:var(--blanco);
+  border:none;
+  border-radius: 16px;
+  position:relative;
+  height:60px;
+  font-size:1rem;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover{
+  background:transparent;
+  color:var(--azul7);
+}
+
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: var(--azul7);
+  transition:400ms ease all;
+}
+
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+/* Íconos revisar */
+.button icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Texto */
+.text {
+  display: inline-block;
+}
+
+/* ----Responsividad---- */
+@media (max-width: 768px) {
+  .button {
+    padding: 0 1em;
+    justify-content: center;
+  }
+
+  .text {
+    display: none; 
+  }
+
+  .icon {
+    width: 20px; 
+    height: 20px;
+  }
+}
+
+
